@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:background="@color/post_background"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/usern_name"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/status"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/usern_name"
+        android:layout_margin="5dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/status"
+        android:layout_below="@+id/status"
+        android:layout_margin="5dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/gaymers" />
+
+</RelativeLayout>
